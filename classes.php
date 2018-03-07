@@ -39,12 +39,14 @@ class Rectangle implements IShape
     public function perimeter()
     {
         $perimeter = ($this->width + $this->height) * 2;
+
         return $perimeter;
     }
 
     public function area()
     {
         $area = $this->width * $this->height;
+
         return $area;
     }
 }
@@ -71,12 +73,14 @@ class Circle implements IShape
     public function perimeter()
     {
         $perimeter = 2 * M_PI * $this->radius;
+
         return $perimeter;
     }
 
     public function area()
     {
         $area = M_PI * pow($this->radius, 2);
+
         return $area;
     }
 }
@@ -103,12 +107,14 @@ class Square implements IShape
     public function perimeter()
     {
         $perimeter = 4 * $this->length;
+
         return $perimeter;
     }
 
     public function area()
     {
         $area = pow($this->length, 2);
+
         return $area;
     }
 }
