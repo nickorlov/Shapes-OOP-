@@ -1,0 +1,19 @@
+{
+  "name": "oop/shapes",
+  "description": "Count shapes",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "nickorlov",
+      "email": "neserag95@mail.ru"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "liw\\": ""
+    }
+  }
+}
