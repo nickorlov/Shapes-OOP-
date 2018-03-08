@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 $rectangle = new liw\app\Rectangle(17, 11);
 $rectangle->setWidth(12);
