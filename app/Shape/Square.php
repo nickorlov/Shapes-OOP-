@@ -27,7 +27,7 @@ class Square implements IShape
     /**
      * @param float $length
      */
-    public function setLength(float $length)
+    public function setLength(float $length): void
     {
         $this->length = $length;
     }

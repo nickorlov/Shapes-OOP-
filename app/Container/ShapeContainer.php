@@ -12,10 +12,16 @@ class ShapeContainer implements IShape
     /**
      * @return float
      */
-    public function perimeter(): float;
+    public function perimeter(): float
+    {
+
+    }
 
     /**
      * @return float
      */
-    public function area(): float;
+    public function area(): float
+    {
+
+    }
 }
