@@ -1,6 +1,6 @@
 <?php
 
-namespace liw\app;
+namespace Shape;
 
 class Square implements IShape
 {
