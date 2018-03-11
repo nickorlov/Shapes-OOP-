@@ -2,6 +2,8 @@
 
 namespace Shape;
 
+use Container\ShapeContainer;
+
 class Rectangle implements IShape
 {
     /** @var float */
@@ -13,10 +15,11 @@ class Rectangle implements IShape
     /**
      * Rectangle constructor.
      * @param float $width
-     * @param float $height (нужно ли писать аннотацию к этому конструктору, если я указал типы явно?)
+     * @param float $height
      */
     public function __construct(float $width, float $height)
     {
+        ShapeContainer::addShape($this);
         $this->width = $width;
         $this->height = $height;
     }
