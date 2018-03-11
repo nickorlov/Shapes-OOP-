@@ -1,6 +1,6 @@
 <?php
 
-namespace liw\app;
+namespace Shape;
 
 class Circle implements IShape
 {
@@ -27,7 +27,7 @@ class Circle implements IShape
     /**
      * @param float $radius
      */
-    public function setRadius(float $radius)
+    public function setRadius(float $radius): void
     {
         $this->radius = $radius;
     }

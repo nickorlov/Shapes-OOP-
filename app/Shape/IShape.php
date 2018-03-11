@@ -1,6 +1,6 @@
 <?php
 
-namespace liw\app;
+namespace Shape;
 
 interface IShape
 {

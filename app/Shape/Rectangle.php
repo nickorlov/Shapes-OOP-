@@ -1,6 +1,6 @@
 <?php
 
-namespace liw\app;
+namespace Shape;
 
 class Rectangle implements IShape
 {
@@ -32,7 +32,7 @@ class Rectangle implements IShape
     /**
      * @param float $width
      */
-    public function setWidth(float $width)
+    public function setWidth(float $width): void
     {
         $this->width = $width;
     }
@@ -48,7 +48,7 @@ class Rectangle implements IShape
     /**
      * @param float $height
      */
-    public function setHeight(float $height)
+    public function setHeight(float $height): void
     {
         $this->height = $height;
     }

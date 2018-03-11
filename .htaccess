@@ -1,2 +1,4 @@
 RewriteEngine on
+RewriteRule ^index.php$ web/index.php [L]
+RewriteRule ^getHtmlFromXls.php$ web/getHtmlFromXls.php [L]
 RewriteRule ^$ web/ [L]
