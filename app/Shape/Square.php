@@ -2,8 +2,6 @@
 
 namespace Shape;
 
-use Container\ShapeContainer;
-
 class Square implements IShape
 {
     /** @var float */
@@ -15,7 +13,6 @@ class Square implements IShape
      */
     public function __construct(float $length)
     {
-        ShapeContainer::addShape($this);
         $this->length = $length;
     }
 

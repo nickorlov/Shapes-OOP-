@@ -2,8 +2,6 @@
 
 namespace Shape;
 
-use Container\ShapeContainer;
-
 class Rectangle implements IShape
 {
     /** @var float */
@@ -19,7 +17,6 @@ class Rectangle implements IShape
      */
     public function __construct(float $width, float $height)
     {
-        ShapeContainer::addShape($this);
         $this->width = $width;
         $this->height = $height;
     }

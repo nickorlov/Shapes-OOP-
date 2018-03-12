@@ -2,8 +2,6 @@
 
 namespace Shape;
 
-use Container\ShapeContainer;
-
 class Circle implements IShape
 {
     /** @var float */
@@ -15,7 +13,6 @@ class Circle implements IShape
      */
     public function __construct(float $radius)
     {
-        ShapeContainer::addShape($this);
         $this->radius = $radius;
     }
 
