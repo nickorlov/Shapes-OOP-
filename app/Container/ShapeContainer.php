@@ -6,7 +6,7 @@ use Shape\IShape;
 
 class ShapeContainer implements IShape
 {
-    /** @var IShape */
+    /** @var IShape[] */
     public $shapes;
 
     /**
@@ -14,7 +14,13 @@ class ShapeContainer implements IShape
      */
     public function perimeter(): float
     {
+        $count = 0;
 
+        foreach ($this->shapes as $shape) {
+            $count += $shape->perimeter();
+        }
+
+        return $count;
     }
 
     /**
@@ -22,6 +28,28 @@ class ShapeContainer implements IShape
      */
     public function area(): float
     {
+        $count = 0;
 
+        foreach ($this->shapes as $shape) {
+            $count += $shape->area();
+        }
+
+        return $count;
+    }
+
+    /**
+     * @param IShape $shape
+     */
+    public function addShape(IShape $shape): void
+    {
+        $this->shapes[] = $shape;
+    }
+
+    /**
+     * @return IShape[]
+     */
+    public function getShapes()
+    {
+        return $this->shapes;
     }
 }
